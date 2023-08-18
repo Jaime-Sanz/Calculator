@@ -34,15 +34,21 @@ body {
     margin: 10px;
     background-color: rgb(68, 65, 65);
     justify-content: flex-end;
+    flex-direction: column;
+}
+
+#sub-display-1 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .display-variables {
     align-self: center;
-    font-size: 20px;
+    font-size: 24px;
     margin: 2px;
 }
 
-.display-variables#display-1 {
+#display-1 {
 }
 
 #display-x {
@@ -50,7 +56,17 @@ body {
 }
 
 #display-2 {
-    
+    margin-right: 10px;
+}
+
+#sub-display-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#result {
+    font-size: 48px;
+    color: white;
 }
 
 #numbers-container{
@@ -83,11 +99,25 @@ body {
     border-radius: 5%;
 }
 
+
 .numbers#auto-clear, #clear {
     background-color: #616161;
     color: whitesmoke;
+    transition: 0.2s;
 }
+
+#auto-clear:hover, #clear:hover {
+    background-color: #878787;
+    margin-top: -5px;
+}
+
 
 .numbers#percentage, #division, #addition, #subtract, #multiple {
     background-color: #005db2;
+    transition: 0.2s;
+}
+
+.numbers:hover, #percentage:hover, #division:hover, #addition:hover, #subtract:hover, #multiple:hover {
+    background-color: #daf0ff;
+    margin-top: -5px;
 }
