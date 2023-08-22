@@ -7,12 +7,13 @@
 body {
     height:100vh;
     background-color: #daf0ff;
+    overflow-y: hidden;
 }
 
 #container {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 125px;
 }
 
 #sub-container {
@@ -46,13 +47,7 @@ body {
     align-self: center;
     font-size: 24px;
     margin: 2px;
-}
-
-#display-1 {
-}
-
-#display-x {
-
+    color: #daf0ff;
 }
 
 #display-2 {
@@ -67,6 +62,7 @@ body {
 #result {
     font-size: 48px;
     color: white;
+    margin-right: 5px;
 }
 
 #numbers-container{
@@ -120,4 +116,28 @@ body {
 .numbers:hover, #percentage:hover, #division:hover, #addition:hover, #subtract:hover, #multiple:hover {
     background-color: #daf0ff;
     margin-top: -5px;
+}
+
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    transition: 0.3s;
+    align-self: center;
+}
+
+#logo:hover{
+    margin-top: -2px;
+}
+
+#logo-container h1 {
+    margin: 2px;
+    align-self: center;
 }
