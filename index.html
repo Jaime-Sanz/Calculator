@@ -24,25 +24,25 @@
                 </div>
             </div>
             <div id="numbers-container">
-                <button id="auto-clear" class="numbers">AC</button>
-                <button id="clear" class="numbers">C</button>
-                <button id="percentage" class="numbers">%</button>
-                <button id="division" class="numbers">÷</button>
-                <button id="seven" class="numbers" onclick="test()">7</button>
-                <button id="eight" class="numbers">8</button>
-                <button id="nine" class="numbers">9</button>
-                <button id="addition" class="numbers">+</button>
-                <button id="four" class="numbers">4</button>
-                <button id="five" class="numbers">5</button>
-                <button id="six" class="numbers">6</button>
-                <button id="subtract" class="numbers">-</button>
-                <button id="one" class="numbers">1</button>
-                <button id="two" class="numbers">2</button>
-                <button id="three" class="numbers">3</button>
-                <button id="multiple" class="numbers">x</button>
-                <button id="zero" class="numbers">0</button>
-                <button id="decimal" class="numbers">.</button>
-                <button id="equals" class="numbers">=</button>
+                <button id="auto-clear" class="numbers" onclick="eraseEverything()">AC</button>
+                <button id="clear" class="numbers" onclick="eraseOne()">C</button>
+                <button id="percentage" class="numbers" onclick="operation('%')">%</button>
+                <button id="division" class="numbers" onclick="operation('/')">÷</button>
+                <button id="seven" class="numbers" onclick="getNumbers('7')">7</button>
+                <button id="eight" class="numbers" onclick="getNumbers('8')">8</button>
+                <button id="nine" class="numbers" onclick="getNumbers('9')">9</button>
+                <button id="addition" class="numbers" onclick="operation('+')">+</button>
+                <button id="four" class="numbers" onclick="getNumbers('4')">4</button>
+                <button id="five" class="numbers" onclick="getNumbers('5')">5</button>
+                <button id="six" class="numbers" onclick="getNumbers('6')">6</button>
+                <button id="subtract" class="numbers" onclick="operation('-')">-</button>
+                <button id="one" class="numbers" onclick="getNumbers('1')">1</button>
+                <button id="two" class="numbers" onclick="getNumbers('2')">2</button>
+                <button id="three" class="numbers" onclick="getNumbers('3')">3</button>
+                <button id="multiple" class="numbers" onclick="operation('x')">x</button>
+                <button id="zero" class="numbers" onclick="getNumbers('0')">0</button>
+                <button id="decimal" class="numbers" onclick="getNumbers('.')">.</button>
+                <button id="equals" class="numbers" onclick="valueConversion()">=</button>
             </div>
         </div>
     </div>
